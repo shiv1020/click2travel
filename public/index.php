@@ -33,6 +33,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             require_once __DIR__ . '/../app/controllers/ProcessPaymentController.php';
             break;
 
+        case 'admin_add_package':
+            require_once __DIR__ . '/../app/controllers/AdminAddPackageController.php';
+            break;
+
+        case 'admin_update_package':
+            require_once __DIR__ . '/../app/controllers/AdminUpdatePackageController.php';
+            break;
+
         default:
             die("Invalid POST request");
     }
@@ -76,6 +84,46 @@ case 'mytrips':
 
     case 'admin_dashboard':
         require_once __DIR__ . '/../app/controllers/AdminController.php';
+        break;
+
+    case 'admin_bookings':
+        require_once __DIR__ . '/../app/controllers/AdminBookingsController.php';
+        break;
+
+    case 'admin_delete_booking':
+        require_once __DIR__ . '/../app/controllers/AdminDeleteBookingController.php';
+        break;
+
+    case 'admin_manage_packages':
+        require_once __DIR__ . '/../app/controllers/AdminManagePackagesController.php';
+        break;
+
+    case 'admin_delete_package':
+        require_once __DIR__ . '/../app/controllers/AdminDeletePackageController.php';
+        break;
+
+    case 'admin_contact':
+        require_once __DIR__ . '/../app/controllers/AdminContactController.php';
+        break;
+
+    case 'admin_users':
+        require_once __DIR__ . '/../app/controllers/AdminUsersController.php';
+        break;
+
+    case 'admin_update_user_role':
+        require_once __DIR__ . '/../app/controllers/AdminUpdateUserRoleController.php';
+        break;
+
+    case 'admin_delete_user':
+        require_once __DIR__ . '/../app/controllers/AdminDeleteUserController.php';
+        break;
+
+    case 'admin_status':
+        require_once __DIR__ . '/../app/controllers/AdminStatusController.php';
+        break;
+
+    case 'admin_cancel_booking':
+        require_once __DIR__ . '/../app/controllers/AdminCancelBookingController.php';
         break;
 
     case 'approve_booking':

@@ -23,5 +23,5 @@ $pdo->prepare("
     WHERE booking_id=?
 ")->execute([$booking_id]);
 
-header("Location: " . BASE_URL . "index.php?page=admin_dashboard");
+header("Location: " . BASE_URL . "index.php?page=admin_status");
 exit;
