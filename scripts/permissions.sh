@@ -1,4 +1,4 @@
 #!/bin/bash
-chown -R apache:apache /var/www/html
-chmod -R 755 /var/www/html
-chmod -R 777 /var/www/html/storage
+
+chmod -R 755 /var/www/click2travel
+chown -R apache:apache /var/www/click2travel
